@@ -1,0 +1,5 @@
+I came with an idea called Resume builder
+First we will sign up and then the user need to provide his/her information. 
+According to the given information, our application suggests some default input to the user where the user need to proceed with the paragraph of his choice.
+Templates will be provided to the user and he can make his own choice.
+User can either download the pdf or can be sent to user emailId.

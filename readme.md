@@ -10,3 +10,7 @@ So if we use this app customers get with low prize and organic things and avoid 
 
 
 we have couple ideas and eventually we finalized ***Inventory maintanance*** 
+
+
+Project All about the inventory maintanance , it means helps companies identify which and ***how much stock*** to order at what time
+The practice identifies and responds to trends to ensure there's always enough stock to fulfill customer orders and proper warning of a shortage

@@ -42,6 +42,6 @@ i installed apps and information about idea
 
 Added libraries required for me to start my work.
 
-# working on Ideas
+### Analyzing the idea and exploring about the features
 
-I proposed few ideas of developing the UI .
+I proposed few views for developing the UI and knowing about the features needed for our website.

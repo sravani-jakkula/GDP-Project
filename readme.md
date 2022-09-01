@@ -41,3 +41,7 @@ i installed apps and information about idea
 # Packages and libraries
 
 Added libraries required for me to start my work.
+
+# working on Ideas
+
+I proposed few ideas of developing the UI .

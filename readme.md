@@ -37,3 +37,7 @@ I just installed tools that what i want for database.
 
 I just draw blueprint of idea and i will create pages for our idea.
 i installed apps and information about idea
+
+# Packages and libraries
+
+Added libraries required for me to start my work.

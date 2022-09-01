@@ -31,3 +31,9 @@ our next step is, based on our project i am gonna do the data base. so my team m
 # Working on Tools 
 
 I just installed tools that what i want for database.
+
+
+# UI Blueprint
+
+I just draw blueprint of idea and i will create pages for our idea.
+i installed apps and information about idea

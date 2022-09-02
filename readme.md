@@ -43,7 +43,7 @@ i installed apps and information about idea
 i decided to take sql developer tool for database
 i just installed and i will work on that.
 
-# Packages and libraries
+# Packages and libraries required
 
 Added libraries required for me to start my work.
 

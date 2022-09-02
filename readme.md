@@ -51,8 +51,8 @@ Added libraries required for me to start my work.
 
 I proposed few views for developing the UI and knowing about the features needed for our website.
 
-## UI design
-![rough idea of page](Downloads/rough.jpeg)
+##### UI design
+![rough idea of page](/Downloads/rough.jpeg)
 
 # web pages
 i just started the webpages and i will do get information and i will do more 

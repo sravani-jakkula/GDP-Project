@@ -60,5 +60,5 @@ just created login page
 
 # login page is ready
 Login page is created but this is not the finalized one there are some changes on this and my next step is to work on some other web pages 
-[Login page](Users/s546985/Desktop/GDp/Gdp1.html)
+![Login page image](loginpage.png)
 

@@ -38,13 +38,11 @@ I just installed tools that what i want for database.
 I just draw blueprint of idea and i will create pages for our idea.
 i installed apps and information about idea
 
-<<<<<<< HEAD
-
 
 # Information about database 
 i decided to take sql developer tool for database
 i just installed and i will work on that.
-=======
+
 # Packages and libraries
 
 Added libraries required for me to start my work.
@@ -52,7 +50,9 @@ Added libraries required for me to start my work.
 ### Analyzing the idea and exploring about the features
 
 I proposed few views for developing the UI and knowing about the features needed for our website.
-<<<<<<< HEAD
+
+## UI design
+![rough idea of page](Downloads/rough.jpeg)
 
 # web pages
 i just started the webpages and i will do get information and i will do more 

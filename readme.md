@@ -37,3 +37,9 @@ I just installed tools that what i want for database.
 
 I just draw blueprint of idea and i will create pages for our idea.
 i installed apps and information about idea
+
+
+
+# Information about database 
+i decided to take sql developer tool for database
+i just installed and i will work on that.

@@ -45,3 +45,7 @@ Added libraries required for me to start my work.
 ### Analyzing the idea and exploring about the features
 
 I proposed few views for developing the UI and knowing about the features needed for our website.
+
+# web pages
+i just started the webpages and i will do get information and i will do more 
+just created login page

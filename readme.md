@@ -45,6 +45,7 @@ i just installed and i will work on that.
 
 # Packages and libraries required
 
+Refreshed my knowledge on APIs and gonna through some reference related to project.
 Added libraries required for me to start my work and configured Maven to Eclipse IDE.
 
 ### Analyzing the idea and exploring about the features

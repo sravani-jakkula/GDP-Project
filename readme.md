@@ -58,3 +58,7 @@ I proposed few views for developing the UI and knowing about the features needed
 i just started the webpages and i will do get information and i will do more 
 just created login page
 
+# login page is ready
+Login page is created but this is not the finalized one there are some changes on this and my next step is to work on some other web pages 
+[Login page](file:///C:/Users/s546985/Desktop/GDp/Gdp1.html)
+

@@ -62,3 +62,6 @@ just created login page
 Login page is created but this is not the finalized one there are some changes on this and my next step is to work on some other web pages 
 [Login page](Users/s546985/Desktop/GDp/Gdp1.html)
 
+# database schema
+
+i will prepare the database schema regarding the project

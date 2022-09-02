@@ -65,3 +65,6 @@ Login page is created but this is not the finalized one there are some changes o
 # database schema
 
 i will prepare the database schema regarding the project
+
+# working on Login page 
+as we have developed a basic login page we are working on it to make it more user friendly and attractive.

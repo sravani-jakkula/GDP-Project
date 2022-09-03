@@ -77,3 +77,12 @@ as we have developed a basic login page we are working on it to make it more use
 * Pens and markers
 * Tables and chairs
 * Papers
+
+
+# gathering information regarding which items should be included in the ineventory
+as per discussion we have decided to keep track of laptops,books,A4 size papers,pens,chairs,tables etc
+
+# SQL developer 
+just installed the app
+i will get info and start the process
+

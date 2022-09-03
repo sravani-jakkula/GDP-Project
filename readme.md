@@ -69,3 +69,6 @@ i will prepare the database schema regarding the project
 
 # working on Login page 
 as we have developed a basic login page we are working on it to make it more user friendly and attractive.
+
+# gathering information regarding which items should be included in the ineventory
+as per discussion we have decided to keep track of laptops,books,A4 size papers,pens,chairs,tables etc

@@ -78,3 +78,5 @@ as per discussion we have decided to keep track of laptops,books,A4 size papers,
 just installed the app
 i will get info and start the process
 
+# working on centralized data base
+gone through centralized data bases host i.e; go daddy

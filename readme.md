@@ -69,3 +69,8 @@ i will prepare the database schema regarding the project
 
 # working on Login page 
 as we have developed a basic login page we are working on it to make it more user friendly and attractive.
+
+
+# SQL developer 
+just installed the app
+i will get info and start the process

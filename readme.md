@@ -69,3 +69,11 @@ i will prepare the database schema regarding the project
 
 # working on Login page 
 as we have developed a basic login page we are working on it to make it more user friendly and attractive.
+
+### List of items info on our page
+* MACs
+* Desktops
+* Xerox machine
+* Pens and markers
+* Tables and chairs
+* Papers

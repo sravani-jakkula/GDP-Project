@@ -88,3 +88,8 @@ i will get info and start the process
 
 # working on centralized data base
 gone through centralized data bases host i.e; go daddy
+
+
+# Working On Web Pages 
+created Home pages
+In that Home page , I just created some logos and some information

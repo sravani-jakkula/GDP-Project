@@ -101,3 +101,7 @@ working on database schema and created a AWS IAM by admin and connected it to MY
 
 # working on creating login page and Home page
 As discussed in call working on Creating effective login page and home page with appropriate color combinations.
+
+###
+In Eclipse workspace created a maven project called InventoryAPI.
+Added maven dependicies and plug-ins in pom.xml file.

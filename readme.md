@@ -93,3 +93,7 @@ gone through centralized data bases host i.e; go daddy
 # Working On Web Pages 
 created Home pages
 In that Home page , I just created some logos and some information
+
+
+# working on database schema
+working on database schema and created a AWS IAM by admin and connected it to MYSQL work bench and working on it..

@@ -97,3 +97,7 @@ In that Home page , I just created some logos and some information
 
 # working on database schema
 working on database schema and created a AWS IAM by admin and connected it to MYSQL work bench and working on it..
+
+
+# working on creating login page and Home page
+As discussed in call working on Creating effective login page and home page with appropriate color combinations.

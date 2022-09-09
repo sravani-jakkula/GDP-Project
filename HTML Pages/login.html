@@ -1,57 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Login Page</title>
-<style>
-    .d{
-        display: block;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page
 
+    </title>
+    <style>
+        .p{
+            height: 100%;
+            width:100%;
+            image-resolution: 70%;
+            position: fixed;
+        }
+    </style>
 </head>
 <body>
-    <div class="d">
-        <img src="/images/bearcats.jpg" height="500px" width="500px" align="right"/>
-<form name="loginForm" method="post" action="login.php">
-<table height="300px" width="300px" bgcolor="0099CC" align="center">
-
-<tr>
-<td colspan=2><center><font size=4><b> Login Page</b></font></center></td>
-</tr>
-
-<tr>
-<td>Username:</td>
-<td><input type="text" size=25 name="userid"></td>
-</tr>
-
-<tr>
-<td>Password:</td>
-<td><input type="Password" size=25 name="pwd"></td>
-</tr>
-
-<tr>
-<td ><input type="Reset"></td>
-<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
-
-
-</table>
-</form>
-</div>
-<script language="javascript">
-function check(form)
-{
-
-if(form.userid.value == "Roseindia" && form.pwd.value == "Roseindia")
-{
-	return true;
-}
-else
-{
-	alert("Error Password or Username")
-	return false;
-}
-}
-</script>
-
-
+    <div>
+            <img src="/images/20170804163852_1.jpg" class="p">
+            
+            </div>
 </body>
 </html>

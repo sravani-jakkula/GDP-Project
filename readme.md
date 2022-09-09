@@ -102,9 +102,22 @@ working on database schema and created a AWS IAM by admin and connected it to MY
 # working on creating login page and Home page
 As discussed in call working on Creating effective login page and home page with appropriate color combinations.
 
-###
+### Dependencies
 In Eclipse workspace created a maven project called InventoryAPI.
 Added maven dependicies and plug-ins in pom.xml file.
 
 # working on database 
 Data base schema is prepared and iam going to create tables and i will be working on it.
+
+# Going through react frame works
+Working on react frame works to create a user friendly applications
+
+
+# Working on CSS
+Working on  Style sheets  to make web page attractive.
+
+# Working on Database Schema and tables
+Working on database schema and tables and learning the JPI
+
+### Database schema
+![Database schema view](entity%20diagram.jpeg)

@@ -105,3 +105,6 @@ As discussed in call working on Creating effective login page and home page with
 ###
 In Eclipse workspace created a maven project called InventoryAPI.
 Added maven dependicies and plug-ins in pom.xml file.
+
+# working on database 
+Data base schema is prepared and iam going to create tables and i will be working on it.

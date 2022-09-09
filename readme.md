@@ -115,3 +115,6 @@ Working on react frame works to create a user friendly applications
 
 # Working on CSS
 Working on  Style sheets  to make web page attractive.
+
+# Working on Database Schema and tables
+Working on database schema and tables and learning the JPI

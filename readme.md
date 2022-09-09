@@ -108,3 +108,6 @@ Added maven dependicies and plug-ins in pom.xml file.
 
 # working on database 
 Data base schema is prepared and iam going to create tables and i will be working on it.
+
+# Going through react frame works
+Working on react frame works to create a user friendly applications

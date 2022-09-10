@@ -10,6 +10,10 @@
     <style>
         h2{
             color:red;
+            text-align: center;
+        }
+        h4{
+            text-align: center;
         }
         body {
   font-family: Arial;
@@ -28,39 +32,103 @@
 
 .left {
   left: 0;
-  background-color: #111;
+  background-color:aliceblue;
+}
+.left img{
+    /* height:100%;
+    width:100%; */
+    position:fixed;
 }
 
 .right {
   right: 0;
-  background-color:chocolate;
+  background-color:white;
+  
 }
-.j{
+/* .j{
     margin-top: 100px;
-    margin-right: 10px;
-    display:flexbox;
+    margin-right: 0px;
+    
+*} */
+.cent label{
+    color:black;
 }
-
+.lo{
+    margin-left: 100px;
+    /* float: center; */
+    margin-top: 200px;
+}
+.poo{
+    text-align: center;
+    width:240px;
+    height: 170px;
+    
+    border:5px solid white;
+}
+.par{
+    color:black;
+    margin-left: 100px;
+    width: 300px;
+   
+}
+#po{
+    background-color:navy;
+    color:white;   
+    
+}
+#ll{
+  margin-left: 100px;  
+  background-color: silver;
+}
+.re img{
+    margin-top: 0;
+    margin-left:200px;
+    
+}
+.re h2{
+    color:black;
+}
         
     </style>
 </head>
 <body>
     <div class="split left">
-        <div class="centered"> <h2>UNIVERSITY PORTAL</h2>
-          <img src="/images/20170804163852_1.jpg" alt="Avatar woman">
+        <!-- <div class="centered"> <h2>UNIVERSITY PORTAL</h2>
+            <h4>HELLO STUDENTS AND FACULTY</h4> -->
+          <img src="/images/maxresdefault.jpg" alt="Avatar woman" height="600px" width="660px">
           
          
         </div>
       </div>
       
       <div class="split right">
-        <div class="centered">
-            <div class="j">
-            <label for="l">Enter Your Email</label>
-            <input type="text" name="l" id="l" placeholder="@gmail.com"/>
-            <label for="k">Enter Your Password</label>
-            <input type="text" name="k" id="k"/>
+        <div class="cent">
+
+            <div class="re">
+            <img src="/images/bearcats.jpg" height="150px" width="150px"/>
+            <h2>NORTHWEST MISSOURI STATE UNIVERSITY</h2>
+            
+            </div>
+            <div class="ke">
+            <label for="l" class="lo"></label>
+            <input type="text" name="l" id="l" placeholder="@gmail.com"  size="50" required/>
+            </div>
+            <div>
+            <label for="k" class="lo"></label>
+            <input type="text" name="k" id="k" placeholder="enter password" size="50" required/>
           </div>
+          <div class="poo">
+          <button type="button" id="po">login</button> 
+          
+          <p class="par">
+            Please sign-in with your Northwest username and password.
+          </p>
+          <p class="par">
+            If you need assistance, please contact Northwest Technology Service Center at 660-562-1634.
+          </p>
+          </div>
+
+          <button type="button" id="ll">Help</button>
 
         </div>
       </div>

@@ -8,18 +8,60 @@
 
     </title>
     <style>
-        .p{
-            height: 100%;
-            width:100%;
-            image-resolution: 70%;
-            position: fixed;
+        h2{
+            color:red;
         }
+        body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color:chocolate;
+}
+.j{
+    margin-top: 100px;
+    margin-right: 10px;
+    display:flexbox;
+}
+
+        
     </style>
 </head>
 <body>
-    <div>
-            <img src="/images/20170804163852_1.jpg" class="p">
-            
-            </div>
-</body>
+    <div class="split left">
+        <div class="centered"> <h2>UNIVERSITY PORTAL</h2>
+          <img src="/images/20170804163852_1.jpg" alt="Avatar woman">
+          
+         
+        </div>
+      </div>
+      
+      <div class="split right">
+        <div class="centered">
+            <div class="j">
+            <label for="l">Enter Your Email</label>
+            <input type="text" name="l" id="l" placeholder="@gmail.com"/>
+            <label for="k">Enter Your Password</label>
+            <input type="text" name="k" id="k"/>
+          </div>
+
+        </div>
+      </div>
 </html>

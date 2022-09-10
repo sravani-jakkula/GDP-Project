@@ -39,11 +39,11 @@ I just draw blueprint of idea and i will create pages for our idea.
 i installed apps and information about idea
 
 
-# Information about database 
+#### Information about database 
 i decided to take sql developer tool for database
 i just installed and i will work on that.
 
-# Packages and libraries required
+#### Packages and libraries required
 
 Refreshed my knowledge on APIs and gonna through some reference related to project.
 Added libraries required for me to start my work and configured Maven to Eclipse IDE.
@@ -55,11 +55,11 @@ I proposed few views for developing the UI and knowing about the features needed
 ##### UI design
 ![image of our page](rough.jpeg)
 
-# web pages
+#### web pages
 i just started the webpages and i will do get information and i will do more 
 just created login page
 
-# login page is ready
+#### login page is ready
 Login page is created but this is not the finalized one there are some changes on this and my next step is to work on some other web pages 
 ![Login page image](loginpage.png)
 
@@ -79,45 +79,48 @@ as we have developed a basic login page we are working on it to make it more use
 * Papers
 
 
-# gathering information regarding which items should be included in the ineventory
+#### gathering information regarding which items should be included in the ineventory
 as per discussion we have decided to keep track of laptops,books,A4 size papers,pens,chairs,tables etc
 
-# SQL developer 
+#### SQL developer 
 just installed the app
 i will get info and start the process
 
-# working on centralized data base
+#### working on centralized data base
 gone through centralized data bases host i.e; go daddy
 
 
-# Working On Web Pages 
+#### Working On Web Pages 
 created Home pages
 In that Home page , I just created some logos and some information
 
 
-# working on database schema
+#### working on database schema
 working on database schema and created a AWS IAM by admin and connected it to MYSQL work bench and working on it..
 
 
-# working on creating login page and Home page
+#### working on creating login page and Home page
 As discussed in call working on Creating effective login page and home page with appropriate color combinations.
 
-### Dependencies
+#### Dependencies
 In Eclipse workspace created a maven project called InventoryAPI.
 Added maven dependicies and plug-ins in pom.xml file.
 
-# working on database 
+#### working on database 
 Data base schema is prepared and iam going to create tables and i will be working on it.
 
-# Going through react frame works
+#### Going through react frame works
 Working on react frame works to create a user friendly applications
 
 
-# Working on CSS
+#### Working on CSS
 Working on  Style sheets  to make web page attractive.
 
-# Working on Database Schema and tables
+#### Working on Database Schema and tables
 Working on database schema and tables and learning the JPI
 
 ### Database schema
 ![Database schema view](entity%20diagram.jpeg)
+
+#### Entities
+created a package called com.example.inventoryAPI.entity in Inventory API and added the entity classes and attributes in it. Waiting on database schema approval.

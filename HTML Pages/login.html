@@ -7,6 +7,7 @@
     <title>Login Page
 
     </title>
+    
     <style>
         h2{
             color:red;
@@ -110,15 +111,26 @@
             
             </div>
             <div class="ke">
-            <label for="l" class="lo"></label>
-            <input type="text" name="l" id="l" placeholder="@gmail.com"  size="50" required/>
+            <label for="nam" class="lo"></label>
+            <input type="text" name="nam" id="nam" placeholder="@gmail.com"  size="50" required/>
             </div>
             <div>
-            <label for="k" class="lo"></label>
-            <input type="text" name="k" id="k" placeholder="enter password" size="50" required/>
+            <label for="pass" class="lo"></label>
+            <input type="password" name="pass" id="pass" placeholder="enter password" size="50" required/>
           </div>
           <div class="poo">
-          <button type="button" id="po">login</button> 
+          <button type="submit" id="po" onclick="gamer()">login</button> 
+          <script>
+            function gamer(){
+                if(nam.value== "thri3" && pass.value== "thri3" || nam.value== "srav" && pass.value== "srav" || nam.value== "sasa" && pass.value== "sasa" || nam.value== "tril" && pass.value== "tril"){
+                    window.location.href= "home.html"
+                }
+                else{
+                    alert("wrong Username or Password");
+                }
+            }
+              
+          </script>
           
           <p class="par">
             Please sign-in with your Northwest username and password.
@@ -129,6 +141,9 @@
           </div>
 
           <button type="button" id="ll">Help</button>
+          
+
+          
 
         </div>
       </div>

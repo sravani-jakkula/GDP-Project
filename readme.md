@@ -124,3 +124,6 @@ Working on database schema and tables and learning the JPI
 
 #### Entities
 created a package called com.example.inventoryAPI.entity in Inventory API and added the entity classes and attributes in it. Waiting on database schema approval.
+
+### UPdated schema
+Made a changes on the database schema the finilized schema is ready and in this project we are using centralized database that is AWS in that i created database for our project and i connected that AWS database to my MySQL workbench and working on it. 

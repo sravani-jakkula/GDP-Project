@@ -130,3 +130,7 @@ Made a changes on the database schema the finilized schema is ready and in this 
 
 #### Admin and user login functionality
 Working on implementation of admin and user differentiation login functionality and have to test whether data given while registering is getting stored in the databse or not.
+
+
+### Working on UI
+working on creating User login and user Register form.

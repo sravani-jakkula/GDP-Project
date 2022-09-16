@@ -139,3 +139,6 @@ working on creating User login and user Register form.
 ### Working on the tables
 
 Working on the tables in the centralized database after that i am going to work on backend part.
+
+### Final Login Page view
+![Login page view](login.png)

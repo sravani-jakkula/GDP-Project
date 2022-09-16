@@ -142,3 +142,7 @@ Working on the tables in the centralized database after that i am going to work 
 
 ### Final Login Page view
 ![Login page view](login.png)
+
+
+### Tables created in centralized database
+Tables are created successfully in centralized database working on backend implementation part

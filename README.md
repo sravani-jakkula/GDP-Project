@@ -146,3 +146,11 @@ Working on the tables in the centralized database after that i am going to work 
 
 ### Tables created in centralized database
 Tables are created successfully in centralized database working on backend implementation part
+
+### JPA dependency
+Missed jpa dependecies in the pom.xml which is required for conncting our api to ui.
+Added below dependencies
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>

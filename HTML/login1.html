@@ -55,21 +55,22 @@
     color:black;
 }
 .lo{
-    margin-left: 100px;
+    margin-left: 65px;
     /* float: center; */
     margin-top: 200px;
 }
 .poo{
     text-align: center;
     width:240px;
-    height: 170px;
+    height: 200px;
     
     border:5px solid white;
 }
 .par{
     color:black;
-    margin-left: 100px;
+    margin-left: 65px;
     width: 300px;
+   font-size: small;
    
 }
 #po{
@@ -77,8 +78,12 @@
     color:white;   
     
 }
+#lo{
+    background-color:darkslategray;
+    color:white;
+}
 #ll{
-  margin-left: 100px;  
+  /* margin-left:65px;   */
   background-color: silver;
 }
 .re img{
@@ -96,11 +101,11 @@
     <div class="split left">
         <!-- <div class="centered"> <h2>UNIVERSITY PORTAL</h2>
             <h4>HELLO STUDENTS AND FACULTY</h4> -->
-          <img src="/images/maxresdefault.jpg" alt="Avatar woman" height="600px" width="660px">
+          <img src="/images/20170804163852_1.jpg" alt="Avatar woman" height="600px" width="660px">
           
          
         </div>
-      </div>
+      
       
       <div class="split right">
         <div class="cent">
@@ -112,18 +117,22 @@
             </div>
             <div class="ke">
             <label for="nam" class="lo"></label>
-            <input type="text" name="nam" id="nam" placeholder="@gmail.com"  size="50" required/>
+            <input type="email" name="nam" id="nam" placeholder="@gmail.com"  size="50" required/>
             </div>
+            <br>
             <div>
             <label for="pass" class="lo"></label>
             <input type="password" name="pass" id="pass" placeholder="enter password" size="50" required/>
           </div>
+          <br>
+          <br>
           <div class="poo">
           <button type="submit" id="po" onclick="gamer()">login</button> 
+          <button type="submit" id="lo" onclick="gem()">Register</button>
           <script>
             function gamer(){
                 if(nam.value== "thri3" && pass.value== "thri3" || nam.value== "srav" && pass.value== "srav" || nam.value== "sasa" && pass.value== "sasa" || nam.value== "tril" && pass.value== "tril"){
-                    window.location.href= "home.html"
+                    window.location.href= "home1.html"
                 }
                 else{
                     alert("wrong Username or Password");
@@ -131,16 +140,23 @@
             }
               
           </script>
-          
+          <script>
+            function gem(){
+              window.location.href = "register.html"
+            }
+          </script>
+         
           <p class="par">
             Please sign-in with your Northwest username and password.
           </p>
           <p class="par">
-            If you need assistance, please contact Northwest Technology Service Center at 660-562-1634.
+            For assistance, please contact Northwest Technology Service Center @660-562-1634.
           </p>
+          <br>
+          <button type="button" id="ll">Help</button>
           </div>
 
-          <button type="button" id="ll">Help</button>
+          
           
 
           

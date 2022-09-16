@@ -124,3 +124,21 @@ Working on database schema and tables and learning the JPI
 
 #### Entities
 created a package called com.example.inventoryAPI.entity in Inventory API and added the entity classes and attributes in it. Waiting on database schema approval.
+
+### UPdated schema
+Made a changes on the database schema the finilized schema is ready and in this project we are using centralized database that is AWS in that i created database for our project and i connected that AWS database to my MySQL workbench and working on it. 
+
+#### Admin and user login functionality
+Working on implementation of admin and user differentiation login functionality and have to test whether data given while registering is getting stored in the databse or not.
+
+
+### Working on UI
+working on creating User login and user Register form.
+
+
+### Working on the tables
+
+Working on the tables in the centralized database after that i am going to work on backend part.
+
+### Final Login Page view
+![Login page view](login.png)

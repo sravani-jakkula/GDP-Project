@@ -143,6 +143,28 @@ Working on the tables in the centralized database after that i am going to work 
 ### Final Login Page view
 ![Login page view](login.png)
 
+<<<<<<< HEAD
 ### Tables created in centralized database
 
 Tables are created successfully in centralized database working on backend implementation paRT
+=======
+
+### Tables created in centralized database
+Tables are created successfully in centralized database working on backend implementation part
+
+### JPA dependency
+Missed jpa dependecies in the pom.xml which is required for connecting our api to ui.
+Added below dependencies
+<p><dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+</p>
+
+###    Working on JPA connectivity
+AS of now frontend has less priority will work on implementation part i.e; connecting JPA
+
+
+### Working on creating components using react
+working on creating dynamic webpages using react
+>>>>>>> 0fe705583086cae2bbcbea96db4bf262e39aa047

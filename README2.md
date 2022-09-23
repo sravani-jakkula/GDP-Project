@@ -157,3 +157,6 @@ Added below dependencies
 
 ### Finalized schema is ready 
  started working on creatng tables in the AWS there are only 1 table left after that iam going to work on implementation part 
+
+### working on the database tables
+working on the centralized database tables and started doing an implementation part here i faced some of the issues while connecting the centralized database to my sql workbench finally i resolved it..

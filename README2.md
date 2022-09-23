@@ -1,3 +1,17 @@
+### Table of contents
+
+#### * Team Members
+#### * Project ideas
+#### * Finalzed project Idea
+#### * Project abstract
+#### * Gathering requirments
+#### * Tools Installation
+#### * UI blueprint
+#### * Database schema
+#### * Login page overview
+#### * importing libraries for maven project
+#### * Adding dependecies in pom.xml
+
 # PROJECT
 ### My Idea
 

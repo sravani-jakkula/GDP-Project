@@ -1,17 +1,3 @@
-### Table of contents
-
-#### * Team Members
-#### * Project ideas
-#### * Finalzed project Idea
-#### * Project abstract
-#### * Gathering requirments
-#### * Tools Installation
-#### * UI blueprint
-#### * Database schema
-#### * Login page overview
-#### * importing libraries for maven project
-#### * Adding dependecies in pom.xml
-
 # PROJECT
 ### My Idea
 
@@ -168,4 +154,6 @@ Added below dependencies
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 </dependency>
-### working on tables
+
+### Finalized schema is ready 
+ started working on creatng tables in the AWS there are only 1 table left after that iam going to work on implementation part 

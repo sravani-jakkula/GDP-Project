@@ -28,7 +28,7 @@ function Regi() {
 
     }
 
-    const handleSubmit  = () => {
+    const handlemaiiet = () => {
         window.location.href = "Login.js"
     }
 
@@ -57,7 +57,7 @@ function Regi() {
                 </div>
             </div>
             <div class="footer">
-                <button onClick={()=>handleSubmit()} type="submit" class="btn">submit</button>
+                <button onClick={()=>handlemaiiet()} type="submit" class="btn">submit</button>
             </div>
         </div>
        

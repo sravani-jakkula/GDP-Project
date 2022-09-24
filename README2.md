@@ -160,3 +160,7 @@ Added below dependencies
 
 ### working on the database tables
 working on the centralized database tables and started doing an implementation part here i faced some of the issues while connecting the centralized database to my sql workbench finally i resolved it..
+
+
+### working on JPA connectivity
+working on functionality part i.e; retrieving data from front end and storing in data base 

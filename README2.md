@@ -174,3 +174,6 @@ Completed working on relationships between entities in database schema.
 Worked on web pages and added components to the home page.
 Started implementation for login and register page.
 Trying to store data in the remote database.
+
+### Collecting Information regarding React for workshop.
+Working on preparing PPT regarding react framework for Workshop.

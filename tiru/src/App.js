@@ -3,18 +3,14 @@ import Login from './Login';
 import time from './time.jpg';
 
 import './App.css'
+import RegistrationForm from './Regi';
 
 
 function App() {
   return (    
     <>
     <Login /> 
-    {/* <div className='split'>
-      <div className='split-left'> 
-        <img src={time} />
-      </div>
-      
-    </div> */}
+    
     </>
   );
 }

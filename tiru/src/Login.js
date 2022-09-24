@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 import "./login.css";
+import Regi from "./Regi.js";
 
-function App() {
+function Login() {
+
   // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -24,6 +26,11 @@ function App() {
     uname: "invalid username",
     pass: "invalid password"
   };
+
+  const handleSubmit1 = () =>{
+      window.location.href = "Regi.js"
+      Regi();
+  }
 
   const handleSubmit = (event) => {
     //Prevent page reload
@@ -70,9 +77,16 @@ function App() {
         </div>
         <div className="button-container">
           <input type="submit" />
-        </div>
+        </div>      
+
       </form>
+      <div class="footee">
+          <button onClick={ () => handleSubmit1()} type="button" class="button-register">Register</button>
+          
+      </div>
+      
     </div>
+   
   );
 
   return (
@@ -85,4 +99,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;

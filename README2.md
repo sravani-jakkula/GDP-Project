@@ -177,3 +177,8 @@ Trying to store data in the remote database.
 
 ### working on connectivity
 Iam using JPA to connect backend and database to learn JPA first i should learn JDBC and springboot i started working on them 
+
+
+### Collecting Information regarding React for workshop.
+Working on preparing PPT regarding react framework for Workshop.
+

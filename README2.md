@@ -164,3 +164,7 @@ working on the centralized database tables and started doing an implementation p
 
 ### working on JPA connectivity
 working on functionality part i.e; retrieving data from front end and storing in data base 
+
+
+### working on React framework
+Working on creating home page using react framework.

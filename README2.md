@@ -174,3 +174,6 @@ Completed working on relationships between entities in database schema.
 Worked on web pages and added components to the home page.
 Started implementation for login and register page.
 Trying to store data in the remote database.
+
+### working on connectivity
+Iam using JPA to connect backend and database to learn JPA first i should learn JDBC and springboot i started working on them 

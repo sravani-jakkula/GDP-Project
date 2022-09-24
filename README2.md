@@ -182,3 +182,5 @@ Iam using JPA to connect backend and database to learn JPA first i should learn 
 ### Collecting Information regarding React for workshop.
 Working on preparing PPT regarding react framework for Workshop.
 
+#### Saving data
+Data is getting stored in the local database. So, now need to make connectivity from api to remote database. Going ahead with JPA.

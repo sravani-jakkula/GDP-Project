@@ -153,4 +153,27 @@ Added below dependencies
 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+</dependency>
+
+### Finalized schema is ready 
+ started working on creatng tables in the AWS there are only 1 table left after that iam going to work on implementation part 
+
+### working on the database tables
+working on the centralized database tables and started doing an implementation part here i faced some of the issues while connecting the centralized database to my sql workbench finally i resolved it..
+
+
+### working on JPA connectivity
+working on functionality part i.e; retrieving data from front end and storing in data base 
+
+
+### working on React framework
+Working on creating home page and login using react framework.
+
+#### week 5 accomplishments
+Completed working on relationships between entities in database schema.
+Worked on web pages and added components to the home page.
+Started implementation for login and register page.
+Trying to store data in the remote database.
+
+### Collecting Information regarding React for workshop.
+Working on preparing PPT regarding react framework for Workshop.

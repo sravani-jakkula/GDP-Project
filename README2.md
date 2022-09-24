@@ -168,3 +168,9 @@ working on functionality part i.e; retrieving data from front end and storing in
 
 ### working on React framework
 Working on creating home page using react framework.
+
+#### week 5 accomplishments
+Completed working on relationships between entities in database schema.
+Worked on web pages and added components to the home page.
+Started implementation for login and register page.
+Trying to store data in the remote database.

@@ -190,3 +190,6 @@ Working on ORM (i.e) Object Relation Mapping and tables are created in the datab
 
 ### Working on workshop presentation
 gathering information about JPA and AWS to present in workshop.
+
+### Working on installing packages for react.
+Working on installing NPM(node package manager) packages so that we can create react applications.

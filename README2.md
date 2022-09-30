@@ -193,3 +193,7 @@ gathering information about JPA and AWS to present in workshop.
 
 ### Working on installing packages for react.
 Working on installing NPM(node package manager) packages so that we can create react applications.
+
+
+### worked on Workshop presentation and gone through react framework.
+Prepared for workshop presentation and working with react framework.

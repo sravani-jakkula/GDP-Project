@@ -186,7 +186,7 @@ Working on preparing PPT regarding react framework for Workshop.
 Data is getting stored in the local database. So, now need to make connectivity from api to remote database. Going ahead with JPA.
 
 ### Working on implementation part
-Working on ORM (i.e) Object Relation Mapping and tables are created in the database s
+Working on ORM (i.e) Object Relation Mapping and tables are created in the databases
 
-### working on Login functionality
-Working on Dynamic login page using rect framework.
+### Working on workshop presentation
+gathering information about JPA and AWS to present in workshop.

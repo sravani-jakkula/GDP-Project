@@ -187,3 +187,6 @@ Data is getting stored in the local database. So, now need to make connectivity 
 
 ### Working on implementation part
 Working on ORM (i.e) Object Relation Mapping and tables are created in the database s
+
+### working on Login functionality
+Working on Dynamic login page using rect framework.

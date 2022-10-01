@@ -1,3 +1,17 @@
+### Table of contents
+
+#### * Team Members
+#### * Project ideas
+#### * Finalzed project Idea
+#### * Project abstract
+#### * Gathering requirments
+#### * Tools Installation
+#### * UI blueprint
+#### * Database schema
+#### * Login page overview
+#### * importing libraries for maven project
+#### * Adding dependecies in pom.xml
+
 # PROJECT
 ### My Idea
 
@@ -153,58 +167,4 @@ Added below dependencies
 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-</dependency>
-
-### Finalized schema is ready 
- started working on creatng tables in the AWS there are only 1 table left after that iam going to work on implementation part 
-
-### working on the database tables
-working on the centralized database tables and started doing an implementation part here i faced some of the issues while connecting the centralized database to my sql workbench finally i resolved it..
-
-
-### working on JPA connectivity
-working on functionality part i.e; retrieving data from front end and storing in data base 
-
-
-### working on React framework
-Working on creating home page and login using react framework.
-
-#### week 5 accomplishments
-Completed working on relationships between entities in database schema.
-Worked on web pages and added components to the home page.
-Started implementation for login and register page.
-Trying to store data in the remote database.
-
-### working on connectivity
-Iam using JPA to connect backend and database to learn JPA first i should learn JDBC and springboot i started working on them 
-
-
-### Collecting Information regarding React for workshop.
-Working on preparing PPT regarding react framework for Workshop.
-
-#### Saving data
-Data is getting stored in the local database. So, now need to make connectivity from api to remote database. Going ahead with JPA.
-
-### Working on implementation part
-Working on ORM (i.e) Object Relation Mapping and tables are created in the databases
-
-### Working on workshop presentation
-gathering information about JPA and AWS to present in workshop.
-
-### Working on installing packages for react.
-Working on installing NPM(node package manager) packages so that we can create react applications.
-
-
-### worked on Workshop presentation and gone through react framework.
-Prepared for workshop presentation and working with react framework.
-
-### Working on ORM
-started working on object-relation mapping after that we will going to test it. database tables are created.
-
-### updating data
-Local database is getting update while we try to post a JSON object to the UI.
-Trying to test using postman.
-
-### resolving issue
-While trying to run the API on the given port, it is getting failed and throwing an error related to jdbc template.
-Working on it by adding related dependecies to the xml file.
+		</dependency>

@@ -1,37 +1,32 @@
-import { useState } from "react";
-import Dashboard from "./Dashboard";
-const Login = () => {
-  const [username, setusername] = useState("");
-  const [password, setpassword] = useState("");
-  const [authenticated, setauthenticated] = useState(localStorage.getItem(localStorage.getItem("authenticated")|| false));
-  const users = [{ username: "Jane", password: "testpassword" }];
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const account = users.find((user) => user.username === username);
-    if (account && account.password === password) {
-        setauthenticated(true)
-        localStorage.setItem("authenticated", true);
-    }
-  };
-  return (
-    <div>
-      <p>Welcome Back</p>
-      <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="Username"
-        value={username}
-        onChange={(e) => setusername(e.target.value)}
-      />
-      <input
-        type="password"
-        name="Password"
-        onChange={(e) => setpassword(e.target.value)}
-      />
-      <input type="submit" value="Submit" />
-      </form>
-    </div>
-  )
-};
+import React from 'react'
+import './Login.css';
+import team from './team.jpg';
+import pilla from './pilla.jpg';
 
-export default Login;
+
+export default function Login() {
+  return (
+    <>
+    
+    <img src={team} alt="time" className='timed'/>
+    <img src={pilla} alt="northwest" className='timee'/>
+    <div>
+       <input type="text" placeholder='enter University email' size="50" className='as'/>
+       
+    </div>
+    <div>
+       <input type="password" placeholder='enter University password' size="50" className='al'/>
+   
+       <button type="submit"  className='happy' >Login</button>
+
+       <button type="submit"  className='happyl' >Register</button>
+
+       <p className='hi'>
+       Please sign-in with your Northwest username and password. <br></br>If you need assistance, please contact Northwest Technology Service Center at 660-562-1634.
+       </p>
+       <button type="submit"  className='happylo' >Help</button>
+    </div>
+   
+    </>
+  )
+}

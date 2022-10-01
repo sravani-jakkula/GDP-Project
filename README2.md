@@ -200,3 +200,7 @@ Prepared for workshop presentation and working with react framework.
 
 ### Working on ORM
 started working on object-relation mapping after that we will going to test it. database tables are created.
+
+### 
+Local database is getting update while we try to post a JSON object to the UI.
+Trying to test using postman.

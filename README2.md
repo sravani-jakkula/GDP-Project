@@ -184,3 +184,19 @@ Working on preparing PPT regarding react framework for Workshop.
 
 #### Saving data
 Data is getting stored in the local database. So, now need to make connectivity from api to remote database. Going ahead with JPA.
+
+### Working on implementation part
+Working on ORM (i.e) Object Relation Mapping and tables are created in the databases
+
+### Working on workshop presentation
+gathering information about JPA and AWS to present in workshop.
+
+### Working on installing packages for react.
+Working on installing NPM(node package manager) packages so that we can create react applications.
+
+
+### worked on Workshop presentation and gone through react framework.
+Prepared for workshop presentation and working with react framework.
+
+### Working on ORM
+started working on object-relation mapping after that we will going to test it. database tables are created.

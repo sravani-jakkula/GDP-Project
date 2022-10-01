@@ -197,3 +197,6 @@ Working on installing NPM(node package manager) packages so that we can create r
 
 ### worked on Workshop presentation and gone through react framework.
 Prepared for workshop presentation and working with react framework.
+
+### Working on ORM
+started working on object-relation mapping after that we will going to test it. database tables are created.

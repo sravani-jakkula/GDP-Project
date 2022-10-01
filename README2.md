@@ -201,6 +201,10 @@ Prepared for workshop presentation and working with react framework.
 ### Working on ORM
 started working on object-relation mapping after that we will going to test it. database tables are created.
 
-### 
+### updating data
 Local database is getting update while we try to post a JSON object to the UI.
 Trying to test using postman.
+
+### resolving issue
+While trying to run the API on the given port, it is getting failed and throwing an error related to jdbc template.
+Working on it by adding related dependecies to the xml file.

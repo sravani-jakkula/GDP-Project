@@ -208,3 +208,6 @@ Trying to test using postman.
 ### resolving issue
 While trying to run the API on the given port, it is getting failed and throwing an error related to jdbc template.
 Working on it by adding related dependecies to the xml file.
+
+### API status
+Inventory API is started and running on the port 8090. User can able to login and registration data is getting stored in the database once we hit the postmapping method.

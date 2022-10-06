@@ -1,32 +1,54 @@
-import React from 'react'
-import './Login.css';
-import team from './team.jpg';
-import pilla from './pilla.jpg';
+import { useState } from "react";
+import Dashboard from "./Dashboard";
+import './login.css';
 
 
-export default function Login() {
+const Login = () => {
+  const [username, setusername] = useState("");
+  const [password, setpassword] = useState("");
+  const [authenticated, setauthenticated] = useState(localStorage.getItem(localStorage.getItem("authenticated")|| false));
+  const users = [{ username: "Jane", password: "testpassword" }];
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const account = users.find((user) => user.username === username);
+    if (account && account.password === password) {
+        setauthenticated(true)
+        localStorage.setItem("authenticated", true);
+    }
+  };
   return (
-    <>
-    
-    <img src={team} alt="time" className='timed'/>
-    <img src={pilla} alt="northwest" className='timee'/>
     <div>
-       <input type="text" placeholder='enter University email' size="50" className='as'/>
-       
-    </div>
-    <div>
-       <input type="password" placeholder='enter University password' size="50" className='al'/>
-   
-       <button type="submit"  className='happy' >Login</button>
+      <p className="para">Welcome Back</p>
+      <h1 className="head">Login Page</h1>
+      <div>
+        <input
+            type="text"
+            name="Username"
+            value={username}
+            onChange={(e) => setusername(e.target.value)}
+            required
+            placeholder="Enter yor Email"
+            className="emailm"
+            size="30"
+        />
+      </div>
+      <div>
+        <input
+            type="password"
+            name="Password"
+            onChange={(e) => setpassword(e.target.value)}
+            required
+            placeholder="Enter yor Password"
+            className="pass"
+            size="30"
+        />
+       </div>
+      <button type="submit" className="simple">Submit</button>
+      <button type="submit" className="simplei">Register</button>
 
-       <button type="submit"  className='happyl' >Register</button>
-
-       <p className='hi'>
-       Please sign-in with your Northwest username and password. <br></br>If you need assistance, please contact Northwest Technology Service Center at 660-562-1634.
-       </p>
-       <button type="submit"  className='happylo' >Help</button>
+     
     </div>
-   
-    </>
   )
-}
+};
+
+export default Login;

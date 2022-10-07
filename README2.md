@@ -211,3 +211,7 @@ Working on it by adding related dependecies to the xml file.
 
 ### API status
 Inventory API is started and running on the port 8090. User can able to login and registration data is getting stored in the database once we hit the postmapping method.
+
+### Working on the implementation
+
+Working on JPA connectivity we tried to store some values from postman to Remote database the values are stored successfully.

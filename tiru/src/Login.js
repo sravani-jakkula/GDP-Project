@@ -1,54 +1,38 @@
-import { useState } from "react";
-import Dashboard from "./Dashboard";
-import './login.css';
+import React from 'react';
+import { Routes, Route , useNavigate } from 'react-router-dom';
+import team from '../src/images/team.jpg'
+import './login.css'
+import Register from './Register';
 
+export default function Login() {
+  const Navigate = useNavigate();
 
-const Login = () => {
-  const [username, setusername] = useState("");
-  const [password, setpassword] = useState("");
-  const [authenticated, setauthenticated] = useState(localStorage.getItem(localStorage.getItem("authenticated")|| false));
-  const users = [{ username: "Jane", password: "testpassword" }];
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const account = users.find((user) => user.username === username);
-    if (account && account.password === password) {
-        setauthenticated(true)
-        localStorage.setItem("authenticated", true);
-    }
-  };
+  const fun = () =>{
+    Navigate('/Register');
+  } 
   return (
-    <div>
-      <p className="para">Welcome Back</p>
-      <h1 className="head">Login Page</h1>
-      <div>
-        <input
-            type="text"
-            name="Username"
-            value={username}
-            onChange={(e) => setusername(e.target.value)}
-            required
-            placeholder="Enter yor Email"
-            className="emailm"
-            size="30"
-        />
-      </div>
-      <div>
-        <input
-            type="password"
-            name="Password"
-            onChange={(e) => setpassword(e.target.value)}
-            required
-            placeholder="Enter yor Password"
-            className="pass"
-            size="30"
-        />
-       </div>
-      <button type="submit" className="simple">Submit</button>
-      <button type="submit" className="simplei">Register</button>
+    <>   
+    <Routes>
+      <Route path="/Register" element={<Register />}/>
+    </Routes> 
 
-     
-    </div>
+<div class="split left">
+  <div class="centered">
+    <img src={team} className="lo"/>    
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <h1 className='head'>Login Page</h1>
+    <input type="text" size="50" placeholder='Enter Your Email' required className='email'/>
+    <input type="password" size="50" placeholder='Enter Your password' required className='password'/>
+
+  </div>
+  <button type="submit"  className='butt'>Submit</button>
+  <button type="submit"  onClick={fun} className='regi' >Register</button>
+
+</div>
+    </>
   )
-};
-
-export default Login;
+}

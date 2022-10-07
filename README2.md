@@ -219,3 +219,6 @@ Working on JPA connectivity we tried to store some values from postman to Remote
 
 ### Working on Implementation
 Working on Home page components of Inventory maintenace project.
+
+### working on Styling for login and register page.
+Done with the styling part for home and login page.

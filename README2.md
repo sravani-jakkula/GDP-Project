@@ -222,3 +222,6 @@ Working on Home page components of Inventory maintenace project.
 
 ### working on Styling for login and register page.
 Done with the styling part for home and login page.
+
+### Wroking on connectivity
+working on JPA connectivity with the help of OMG for object relational mapping we are using hibernate in the backend.

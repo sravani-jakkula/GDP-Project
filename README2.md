@@ -238,4 +238,4 @@ Added mysql dependencies to the pom.xml file which is used to connect api to dat
 		</dependency>```
 
 #### API running status image
-1[Api console image](api.png)
+![Api console image](api.png)

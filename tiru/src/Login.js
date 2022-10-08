@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route , useNavigate } from 'react-router-dom';
-import team from '../src/images/team.jpg'
+import group from '../src/images/group.jpg'
 import './login.css'
 import Register from './Register';
 
@@ -18,7 +18,7 @@ export default function Login() {
 
 <div class="split left">
   <div class="centered">
-    <img src={team} className="lo"/>    
+    <img src={group} className="lo"/>    
   </div>
 </div>
 

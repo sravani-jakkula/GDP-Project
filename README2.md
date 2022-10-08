@@ -239,3 +239,6 @@ Added mysql dependencies to the pom.xml file which is used to connect api to dat
 ```
 #### API running status image
 ![Api console image](api.png)
+
+### working on JPA
+working on JPA connectivity and frontend API calls

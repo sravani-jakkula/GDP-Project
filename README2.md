@@ -235,7 +235,7 @@ Added mysql dependencies to the pom.xml file which is used to connect api to dat
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
-		</dependency>```
+		</dependency>
 
 #### API running status image
 ![Api console image](api.png)

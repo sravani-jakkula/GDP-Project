@@ -215,3 +215,16 @@ Inventory API is started and running on the port 8090. User can able to login an
 ### Working on the implementation
 
 Working on JPA connectivity we tried to store some values from postman to Remote database the values are stored successfully.
+
+
+### Working on Implementation
+Working on Home page components of Inventory maintenace project.
+
+### working on Styling for login and register page.
+Done with the styling part for home and login page.
+
+### Wroking on connectivity
+working on JPA connectivity with the help of OMG for object relational mapping we are using hibernate in the backend.
+
+### working on connectivity part front end to backend
+facing difficuly while connecting frontend to backend we are working on it.

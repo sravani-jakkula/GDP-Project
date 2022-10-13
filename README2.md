@@ -228,3 +228,17 @@ working on JPA connectivity with the help of OMG for object relational mapping w
 
 ### working on connectivity part front end to backend
 facing difficuly while connecting frontend to backend we are working on it.
+
+#### mysql dependencies
+Added mysql dependencies to the pom.xml file which is used to connect api to database.
+```<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+```
+#### API running status image
+![Api console image](api.png)
+
+### working on JPA
+working on JPA connectivity and frontend API calls

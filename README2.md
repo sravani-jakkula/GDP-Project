@@ -249,4 +249,6 @@ working on JPA connectivity and frontend API calls
 
 ### working on creation of tables in AWS
 While  creating the tables in the database asset table and asset history table faced some issues working on the remaining tables are created successfully 
->>>>>>> 2317a5e2ec0df099702b1463f82f935e4dcf7f97
+
+### Tables are created and tested
+Creation of tables is done it needs to be tested the values are stored from the postman but they need to be tested from frontend pages

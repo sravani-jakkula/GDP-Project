@@ -242,3 +242,6 @@ Added mysql dependencies to the pom.xml file which is used to connect api to dat
 
 ### working on JPA
 working on JPA connectivity and frontend API calls
+
+### working on creation of tables in AWS
+While  creating the tables in the database asset table and asset history table faced some issues working on the remaining tables are created successfully 

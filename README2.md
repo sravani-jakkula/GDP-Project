@@ -231,7 +231,8 @@ facing difficuly while connecting frontend to backend we are working on it.
 
 #### mysql dependencies
 Added mysql dependencies to the pom.xml file which is used to connect api to database.
-```<dependency>
+```
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>

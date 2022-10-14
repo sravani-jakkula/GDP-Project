@@ -228,3 +228,6 @@ working on JPA connectivity with the help of OMG for object relational mapping w
 
 ### working on connectivity part front end to backend
 facing difficuly while connecting frontend to backend we are working on it.
+
+### Working on frontend home page components
+Working on Home page page components using react Js.

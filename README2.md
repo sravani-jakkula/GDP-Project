@@ -253,3 +253,6 @@ While  creating the tables in the database asset table and asset history table f
 
 ### Tables are created and tested
 Creation of tables is done it needs to be tested the values are stored from the postman but they need to be tested from frontend pages
+
+### Working on Connectivity
+Working on retriving data from front end to spring boot.

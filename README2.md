@@ -229,6 +229,10 @@ working on JPA connectivity with the help of OMG for object relational mapping w
 ### working on connectivity part front end to backend
 facing difficuly while connecting frontend to backend we are working on it.
 
+
+### Working on frontend home page components
+Working on Home page page components using react Js.
+
 #### mysql dependencies
 Added mysql dependencies to the pom.xml file which is used to connect api to database.
 ```
@@ -240,3 +244,12 @@ Added mysql dependencies to the pom.xml file which is used to connect api to dat
 ```
 #### API running status image
 ![Api console image](api.png)
+
+### working on JPA
+working on JPA connectivity and frontend API calls
+
+### working on creation of tables in AWS
+While  creating the tables in the database asset table and asset history table faced some issues working on the remaining tables are created successfully 
+
+### Tables are created and tested
+Creation of tables is done it needs to be tested the values are stored from the postman but they need to be tested from frontend pages

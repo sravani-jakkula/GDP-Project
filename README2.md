@@ -229,9 +229,14 @@ working on JPA connectivity with the help of OMG for object relational mapping w
 ### working on connectivity part front end to backend
 facing difficuly while connecting frontend to backend we are working on it.
 
+
+### Working on frontend home page components
+Working on Home page page components using react Js.
+
 #### mysql dependencies
 Added mysql dependencies to the pom.xml file which is used to connect api to database.
-```<dependency>
+```
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
@@ -245,3 +250,27 @@ working on JPA connectivity and frontend API calls
 
 ### working on creation of tables in AWS
 While  creating the tables in the database asset table and asset history table faced some issues working on the remaining tables are created successfully 
+
+### Tables are created and tested
+Creation of tables is done it needs to be tested the values are stored from the postman but they need to be tested from frontend pages
+
+### Working on Connectivity
+Working on retriving data from front end to spring boot.
+
+#### Added entities
+Application is up and running on port 8090.
+Started working on home components and added relevant entities under src/main/java/com.example.inventory.entities package.
+
+#### Achieved Objectives
+Blueprint for home page is ready. Creation of tables is done it needs to be tested the values are stored from the postman, but they need to be tested from frontend pages.
+Added JDBC template and dependencies, can create tables in the database workspace once api starts running.
+
+
+### Started working on APIs
+
+My work was done like tables are created and those tables are tested with the help of postman so I am helping my teammates on developing APIs.
+
+
+### Working on functionality
+Working on Functionality part i.e; retriving data fron front end and store data in data base.
+

@@ -264,3 +264,9 @@ Started working on home components and added relevant entities under src/main/ja
 #### Achieved Objectives
 Blueprint for home page is ready. Creation of tables is done it needs to be tested the values are stored from the postman, but they need to be tested from frontend pages.
 Added JDBC template and dependencies, can create tables in the database workspace once api starts running.
+
+
+### Started working on APIs
+
+My work was done like tables are created and those tables are tested with the help of postman so I am helping my teammates on developing APIs.
+

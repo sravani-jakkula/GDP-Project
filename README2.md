@@ -256,3 +256,8 @@ Creation of tables is done it needs to be tested the values are stored from the 
 
 ### Working on Connectivity
 Working on retriving data from front end to spring boot.
+
+#### Added entities
+Application is up and running on port 8090.
+Started working on home components and added relevant entities under src/main/java/com.example.inventory.entities package.
+

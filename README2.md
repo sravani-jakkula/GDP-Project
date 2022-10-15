@@ -261,3 +261,6 @@ Working on retriving data from front end to spring boot.
 Application is up and running on port 8090.
 Started working on home components and added relevant entities under src/main/java/com.example.inventory.entities package.
 
+#### Achieved Objectives
+Blueprint for home page is ready. Creation of tables is done it needs to be tested the values are stored from the postman, but they need to be tested from frontend pages.
+Added JDBC template and dependencies, can create tables in the database workspace once api starts running.

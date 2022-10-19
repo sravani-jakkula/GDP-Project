@@ -13,7 +13,7 @@
 #### * [Adding dependecies in pom.xml](#adding-dependecies-in-pom.xml)
 #### * [UI design](#ui-design)
 #### * [Login page](#Login-page)
-#### * [API running status image](#API running status image)
+#### * [API running status image](#API-running-status-image)
 #### * [mysql dependencies](#mysql-dependencies)
 
 ### Team Members

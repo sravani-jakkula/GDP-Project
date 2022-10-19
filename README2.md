@@ -301,3 +301,5 @@ My work was done like tables are created and those tables are tested with the he
 ### Working on functionality
 Working on Functionality part i.e; retriving data fron front end and store data in data base.
 
+### Register page working is done
+Worked on register API when we tryed to store some data though frontend signup page API working good and the data is also stored successfully.

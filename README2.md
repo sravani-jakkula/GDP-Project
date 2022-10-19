@@ -2,18 +2,18 @@
 
 ### Table of contents
 
-#### * [Team Members](#team)
-#### * [Project ideas](#my_idea)
-#### * [Inventory maintanance](#Finali_project_idea)
-#### * [Project abstract](#abstarct)
-#### * [Tools Installation](#tools)
+#### * [Team Members](#team-members)
+#### * [Project ideas](#project_ideas)
+#### * [Inventory maintanance](#inventory-maintanance)
+#### * [Project abstract](#project-abstarct)
+#### * [Tools Installation](#tools-installation)
 #### * [UI blueprint](#ui-blueprint)
-#### * [Database schema](#schema)
+#### * [Database schema](#database-schema)
 #### * [List of items info on our page](#items)
-#### * [Adding dependecies in pom.xml](#JPA_dependencies)
+#### * [Adding dependecies in pom.xml](#adding-dependencies-in-pom.xml)
 #### * [UI design](#ui-design)
-#### * [Login page](#overview_login)
-#### * [API running status image](#Api_status)
+#### * [Login page](#Login-page)
+#### * [API running status image](#Api_running-status-image)
 #### * [mysql dependencies](#mysql-dependencies)
 
 ### Team Members

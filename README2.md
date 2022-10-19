@@ -16,14 +16,7 @@
 #### * Register Page
 #### * Home page
 #### * API status
-#### [Added mysql dependencies to the pom.xml file which is used to connect api to database.
-```
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-```](#mysql dependencies)
+#### [mysql dependencies](#mysql-dependencies)
 
 ### My Idea
 

@@ -2,23 +2,27 @@
 
 ### Table of contents
 
-#### * Team Members
-#### * Project ideas
-#### * Finalzed project Idea
-#### * Project abstract
-#### * Gathering requirments
-#### * Tools Installation
-#### * UI blueprint
-#### * Database schema
-#### * Login page overview
-#### * importing libraries for maven project
-#### * Adding dependecies in pom.xml
-#### * Register Page
-#### * Home page
-#### * API status
+#### * [Team Members](#team)
+#### * [Project ideas](#my_idea)
+#### * [Inventory maintanance](#Finali_project_idea)
+#### * [Project abstract](#abstarct)
+#### * [Tools Installation](#tools)
+#### * [UI blueprint](#ui-blueprint)
+#### * [Database schema](#schema)
+#### * [List of items info on our page](#items)
+#### * [Adding dependecies in pom.xml](#JPA_dependencies)
+#### * [UI design](#ui-design)
+#### * [Login page](#overview_login)
+#### * [API running status image](#Api_status)
 #### * [mysql dependencies](#mysql-dependencies)
 
-### My Idea
+### Team Members
+* Trilochan Reddy Sama
+* Thrinadh Chowdary Gutta
+* Sravani Jakkula
+* Sasank Srinivas Nadendla
+
+### Project ideas
 
 #### Get Farmer Application
 
@@ -30,11 +34,13 @@ So if we use this app customers get with low prize and organic things and avoid 
 
 we have couple ideas and eventually we finalized ***Inventory maintanance*** 
 
-
+#### Inventory maintanance
 Project All about the inventory maintanance , it means helps companies identify which and ***how much stock*** to order at what time
 The practice identifies and responds to trends to ensure there's always enough stock to fulfill customer orders and proper warning of a shortage
 
-
+#### Project abstract
+Maintaining the records for a particular asset information which includes its type, department it belongs to, user assigned and its history, due date on it. 
+Department is the owner of the asset and admin is responsible regarding asset allocation.
 
 My role is all about Database.
 Database is nothing but An organized collection of structured information, The database management system is usually responsible for managing databases.
@@ -46,11 +52,13 @@ Use of **Database** is nothing but Information itself can be stored in a variety
 our next step is, based on our project i am gonna do the data base. so my team members, every body do your own roles and responsibiities and we gonna do project that we can implement idea and we gonna find our own requirements and we will rock.
 
 
-
-# Working on Tools 
+### Tools Installation
+#### Working on Tools installation
 
 I just installed tools that what i want for database.
-
+* REACT
+* SPRINGBOOT
+* MYSQL
 
 # UI Blueprint
 
@@ -166,7 +174,7 @@ Working on the tables in the centralized database after that i am going to work 
 ### Tables created in centralized database
 Tables are created successfully in centralized database working on backend implementation part
 
-### JPA dependency
+### Adding dependecies in pom.xml
 Missed jpa dependecies in the pom.xml which is required for conncting our api to ui.
 Added below dependencies
 <dependency>

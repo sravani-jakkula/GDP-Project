@@ -16,7 +16,7 @@
 #### * Register Page
 #### * Home page
 #### * API status
-#### * Mysql dependenices
+#### [a link](# mysql dependencies)
 
 ### My Idea
 

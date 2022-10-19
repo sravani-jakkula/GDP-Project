@@ -3,17 +3,17 @@
 ### Table of contents
 
 #### * [Team Members](#team-members)
-#### * [Project ideas](#project_ideas)
+#### * [Project ideas](#project-ideas)
 #### * [Inventory maintanance](#inventory-maintanance)
-#### * [Project abstract](#project-abstarct)
-#### * [Tools Installation](#tools-installation)
+#### * [Project abstract](#project-abstract)
+#### * [Tools Installation](#tools-Installation)
 #### * [UI blueprint](#ui-blueprint)
 #### * [Database schema](#database-schema)
 #### * [List of items info on our page](#items)
-#### * [Adding dependecies in pom.xml](#adding-dependencies-in-pom.xml)
+#### * [Adding dependecies in pom.xml](#adding-dependecies-in-pom.xml)
 #### * [UI design](#ui-design)
 #### * [Login page](#Login-page)
-#### * [API running status image](#Api_running-status-image)
+#### * [API running status image](#api_running-status-image)
 #### * [mysql dependencies](#mysql-dependencies)
 
 ### Team Members

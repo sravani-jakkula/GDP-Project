@@ -1,4 +1,23 @@
 # PROJECT
+
+### Table of contents
+
+#### * Team Members
+#### * Project ideas
+#### * Finalzed project Idea
+#### * Project abstract
+#### * Gathering requirments
+#### * Tools Installation
+#### * UI blueprint
+#### * Database schema
+#### * Login page overview
+#### * importing libraries for maven project
+#### * Adding dependecies in pom.xml
+#### * Register Page
+#### * Home page
+#### * API status
+#### * Mysql dependenices
+
 ### My Idea
 
 #### Get Farmer Application

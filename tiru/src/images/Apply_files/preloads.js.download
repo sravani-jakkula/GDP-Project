@@ -1,0 +1,29 @@
+// preload some USWDS images, so they don't flash in upon interactions!
++function () {
+
+  var link = document.querySelector('link[rel="stylesheet"][href*="/uswds/"]')
+  var path = link.getAttribute('href').split('/css/')[0]
+
+  var preloads = [
+    'angle-arrow-down-primary.svg',
+    'angle-arrow-up-primary.svg',
+    'angle-arrow-up-white.svg',
+    'arrow-down.svg',
+    'arrow-right.svg',
+    'external-link.svg',
+    'external-link-hover.svg',
+    'minus.svg',
+    'minus-alt.svg',
+    'plus.svg',
+    'plus-alt.svg'
+  ]
+
+  while (preloads.length) {
+    var el = document.createElement('link')
+    el.rel = 'preload'
+    el.as = 'image'
+    el.href = path + '/img/' + preloads.shift()
+    document.head.appendChild(el)
+  }
+
+}()

@@ -1,0 +1,41 @@
+.login-page-container {
+  background-image: url('https://res.cloudinary.com/degjdup40/image/upload/v1664591961/WhatsApp_Image_2022-10-01_at_5.21.50_AM_kb6fot.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.login-page-span {
+  background-color: seagreen;
+  padding: 7px;
+  margin-left: 300px;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  width: 500px;
+  
+  
+}
+
+.login-page-p {
+  font-size: 18px;
+  text-shadow: 1px 2px 2px black;
+  color: white;
+}
+
+.login-page-button {
+  color: green;
+  width: 300px;
+  padding: 8px;
+  margin: 10px;
+  font-size: 13px;
+  background-color: white;
+  border: 0px;
+  outline: none;
+}

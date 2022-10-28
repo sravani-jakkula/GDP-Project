@@ -1,0 +1,16 @@
+.signup-input {
+  width: 90%;
+  margin: 10px 0px 10px 0px;
+  padding: 8px;
+}
+
+.signup-button {
+  padding: 8px;
+  outline: none;
+  width: 90%;
+  background-color: #09062e;
+  color: white;
+  margin: 10px 0px 10px 0px;
+  border: 0px;
+  cursor: pointer;
+}

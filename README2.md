@@ -303,3 +303,6 @@ Working on Functionality part i.e; retriving data fron front end and store data 
 
 ### Register page working is done
 Worked on register API when we tryed to store some data though frontend signup page API working good and the data is also stored successfully.
+
+### working on asset table 
+inserting the asset record in asset table is done successfully goinf to work on update the asset in the asset table

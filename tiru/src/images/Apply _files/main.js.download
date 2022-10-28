@@ -1,0 +1,438 @@
+var select = function (selector, el) {
+  return [].slice.call((el || document).querySelectorAll(selector))
+}
+
+if (/\brtl\b/.test(location.search)) {
+  document.documentElement.classList.add('rtl')
+}
+
+if (/\bnodialog\b/.test(location.search)) {
+  select('.usa-dialog__open[aria-expanded="true"]').forEach(function (el) {
+    el.setAttribute('aria-expanded', 'false')
+  })
+}
+
+addEventListener('DOMContentLoaded', function () {
+
+  var expand = function (hash) {
+    var target = document.querySelector(hash + '[aria-expanded=false]')
+    if (target) target.click()
+  }
+
+  select('.letter-links').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      var el = e.target.closest('a[href ^= "#accordion-header-"]')
+      if (el) expand(el.getAttribute('href'))
+    })
+  })
+
+  select('.usa-dialog__print').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault()
+      window.print()
+    })
+  })
+
+  if (location.hash) {
+    expand(location.hash)
+  }
+
+  if (document.documentMode) {
+    // IE11- should not focus inline svgs
+    select('svg').forEach(function (el) {
+      el.setAttribute('focusable', false)
+    })
+  }
+
+  bindExchangeRate()
+  bindCGIGroupFees()
+  bindCGIToggleAll()
+  bindCGITrackPassport()
+  bindDepositSlip()
+  bindFAQSearch()
+
+})
+
+function bindCGIGroupFees () {
+  select('form#group-fees').forEach(function (form) {
+
+    var _select = form.elements['visa-type']
+    var _input = form.elements['quantity']
+    var _output = form.querySelector('output')
+    var _rate = form.querySelector('[data-exchange-rate]')
+    var currency = _rate.dataset.currency
+
+    var out = function (v) {
+      _output.innerHTML = '<div class="margin-top-4">' + v + '</div>'
+    }
+
+    var clear = function () {
+      _output.textContent = ''
+    }
+
+    _select.addEventListener('change', clear)
+    _input.addEventListener('change', clear)
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault()
+      var usd = 1 * _select.options[_select.selectedIndex].value
+      var native = 1 * _rate.textContent
+      var quantity = 1 * _input.value
+      var total = currency + ' 0'
+      var error
+
+      if (isNaN(usd)) {
+        error = 'Visa type must be selected.'
+      }
+
+      else if (isNaN(native)) {
+        error = 'Unable to fetch latest exchange rate. Please try again later.'
+      }
+
+      if (error) {
+        out('<span class="usa-error-message">' + error + '</span>')
+      }
+      else {
+        total = currency + ' ' + (usd * native) * quantity
+        out(
+          '<label class="usa-label" id="total-label">Total</label>' +
+          '<h3 class="margin-top-1" aria-labelledby="total-label">' + total + '</h3>' +
+          '<button type="button" class="usa-button usa-dialog__open margin-top-3" aria-controls="group-fees-dialog" aria-expanded="false">View payment of visa fees</button>'
+        )
+      }
+
+      select('[data-fee-amount]').forEach(function (el) {
+        el.textContent = total
+      })
+
+      updateUBANValue(usd, quantity)
+
+    })
+  })
+}
+
+function bindCGIToggleAll () {
+  var EXPANDED = 'cgi-toggle-all--expanded'
+  select('.cgi-toggle-all').forEach(function (button) {
+    var scope = button.dataset.scope
+    button.addEventListener('click', function (e) {
+      var expanded = button.classList.contains(EXPANDED)
+      select(scope + ' .usa-accordion__button[aria-expanded=' + expanded + ']').forEach(function (el) {
+        uswds.components.accordion.toggle(el)
+      })
+      button.classList.toggle(EXPANDED, !expanded)
+    })
+  })
+}
+
+function bindCGITrackPassport () {
+  select('.cgi-track-passport').forEach(function (form) {
+
+    var input = form.elements['passport-number']
+
+    input.addEventListener('change', function (e) {
+      formValidation.check(input)
+    })
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault()
+      if (formValidation.check(input)) {
+        // POST
+        fetchie(
+          form.action,
+          {
+            body: 'passportTrackerPage%3ApsptTrackerForm%3Aj_id34%3Aj_id35%3ApassportNo=' + encodeURIComponent(input.value),
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-urlencoded'
+            }
+          },
+          function (xhr) {
+            console.log({
+              status: xhr.status,
+              text: xhr.responseText
+            })
+          },
+          function (err) {
+            console.log('Error posting data.', (err || ''))
+          }
+        )
+      }
+    })
+
+  })
+}
+
+function bindDepositSlip () {
+  var buttons = select('.deposit-slip-button')
+  if (buttons.length === 0) return // nothing to see here
+
+  var dialog = document.querySelector('.usa-dialog')
+  var amounts = select('[data-fee-amount]', dialog)
+
+  buttons.forEach(function (button) {
+    var rate = button.querySelector('[data-exchange-rate]')
+    button.addEventListener('click', function () {
+      amounts.forEach(function (el) {
+        var amount = 'N/A'
+        if (rate.dataset.exchangeRateUpdated === 'true') {
+          amount = rate.textContent
+        }
+        el.textContent = (rate.dataset.currency + ' ' + amount)
+      })
+    })
+  })
+}
+
+function bindExchangeRate () {
+  if (select('[data-exchange-rate],[data-exchange-rate-date]').length === 0) return
+  var error = function (message) {
+    console.log('Error fetching exchange rates.', message || '')
+  }
+  if (location.protocol === 'file:') return error('Not allowed from file: protocol.')
+  var validHostname = /ustraveldocs\.com|^localhost$/i
+  if (!validHostname.test(location.hostname)) return error('Invalid host')
+  var el = document.querySelector('.usa-logo .cgi-badge')
+  if (!el) return error('Country name not found.')
+  fetchie('/publicexchangerate?country=' + el.textContent, {},
+    function (xhr) {
+      var data = new DOMParser().parseFromString(xhr.responseText, 'text/xml')
+      var rate = 1 * data.querySelector('ratio').textContent
+      var date = data.querySelector('expiration_date').textContent
+      updateExchangeRateValues({ date: date, rate: rate })
+    },
+    error
+  )
+}
+
+function bindFAQSearch () {
+
+  var faqSearchForm = document.querySelector('#faq-search-form')
+  if (!faqSearchForm) return // nothing to see here
+
+  var faqSearchInput = document.querySelector('#faq-search-input')
+  var faqSearchResults = document.querySelector('#faq-search-results')
+  var faqResultsCount = document.querySelector('#faq-search-results-count')
+  var allFaqs = select('.usa-search__result[data-faq-topic]')
+
+  var toggleHidden = function (a, hidden) {
+    a.forEach(function (el) {
+      if (hidden) el.setAttribute('hidden', 'hidden')
+      else el.removeAttribute('hidden')
+    })
+  }
+
+  var updateResultsCount = function (found) {
+    var results = 'result'
+    if (found.length !== 1) results += 's'
+    faqResultsCount.textContent = (
+      'Found ' + found.length + ' ' + results + '.'
+    )
+  }
+
+  select('a[data-faq-topic]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      var faqTopic = el.dataset.faqTopic
+      var filtered = allFaqs.filter(function (el) {
+        return el.dataset.faqTopic !== faqTopic
+      })
+      var found = allFaqs.filter(function (el) {
+        return el.dataset.faqTopic === faqTopic
+      })
+      toggleHidden(filtered, true)
+      toggleHidden(found, false)
+      updateResultsCount(found)
+    })
+  })
+
+  faqSearchForm.addEventListener('submit', function (e) {
+    e.preventDefault()
+
+    var value = faqSearchInput.value
+    if (!value || value.replace(/\s*/g, '') === '') {
+      return alert('No value') // do something better here?
+    }
+
+    var matchWord = new RegExp('\\b' + escapeRegExp(value) + '\\b', 'i')
+
+    var matchAny = new RegExp(escapeRegExp(value), 'i')
+
+    // match multiple words, ...?
+
+    var found = allFaqs.filter(function (el) {
+      return matchAny.test(el.textContent)
+    })
+
+    toggleHidden(allFaqs, true)
+    toggleHidden(found, false)
+    updateResultsCount(found)
+    faqSearchResults.focus()
+  })
+
+}
+
+function countriesToggleAll () {
+  // expand-all & collapse-all functionality - not needed atm
+  var button = '.countries-by-letter .usa-accordion__button'
+  var toggle = function (expanded) {
+    return function (el) {
+      el.addEventListener('click', function (e) {
+        select(button + '[aria-expanded='+ expanded +']').forEach(function (el) {
+          uswds.components.accordion.toggle(el) // el.click() shifts focus() = not good!
+        })
+      })
+    }
+  }
+  select('.countries-by-letter .expand-all').forEach(toggle(false))
+  select('.countries-by-letter .collapse-all').forEach(toggle(true))
+}
+
+function escapeRegExp (s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function fetchie (url, init, resolve, reject) {
+  // Lightweight XHR wrapper (akin to Fetch)
+  // that works in IE11 w/o Promise & Fetch polyfills
+  if (!init) init = {}
+  try {
+    var xhr = new XMLHttpRequest()
+    xhr.open(init.method || 'GET', url)
+    for (var name in init.headers) {
+      xhr.setRequestHeader(name, init.headers[name])
+    }
+    xhr.onerror = function () { reject() }
+    xhr.onload = function () { resolve(xhr) }
+    xhr.send(init.body)
+  } catch (err) {
+    reject(err)
+  }
+}
+
+function updateExchangeRateValues (data) {
+
+  var date = data.date.replace(/(\d{4})-(\d{2})-(\d{2})/, function (_, y, d, m) {
+    return d + '/' + m + '/' + y
+  })
+
+  select('[data-exchange-rate]').forEach(function (el) {
+    var x = (data.rate * (1 * el.dataset.exchangeRate))
+    el.textContent = x.toFixed(1 * el.dataset.toFixed)
+    el.dataset.exchangeRateUpdated = true
+  })
+
+  select('[data-exchange-rate-date]').forEach(function (el) {
+    el.textContent = date
+    el.dataset.exchangeRateDateUpdated = true
+  })
+
+  select('.exchange-rate').forEach(function (el) {
+    el.classList.add('exchange-rate--fetched')
+  })
+
+}
+
+function updateUBANValue (fee, quantity) {
+  var nodes = select('[data-uban-value]')
+  if (nodes.length === 0) return
+
+  var TIERS = [
+    { tier: 1, fee: 160, code: 73 },
+    { tier: 2, fee: 190, code: 85 },
+    { tier: 3, fee: 265, code: 62 },
+    { tier: 4, fee: 205, code: 40 }
+  ]
+  var tier = {}
+  TIERS.some(function (o) {
+    if (fee === o.fee) return !!(tier = o)
+  })
+  if (quantity > 1) tier.tier = 5
+  var qq = ('00' + quantity).slice(-2) // to double-digit
+  var uid = '1234567890'.replace(/./g, function () {
+    return Math.floor(Math.random() * 10) // random digit
+  })
+  var uban = 'TIER' + tier.tier + tier.code + qq + uid
+
+  nodes.forEach(function (el) { el.textContent = uban })
+}
+
+var formValidation = {
+
+  check: function (input) {
+    if (!input.value) {
+      this.error(input, 'Value can not be empty')
+    }
+    else if (!/^\d+$/.test(input.value)) {
+      this.error(input, 'Value must be numeric')
+    }
+    else {
+      this.error(input, false) // clear any previous message
+      return true
+    }
+  },
+
+  error: function (input, message) {
+    var classToken = 'validation-error'
+    var classError = 'usa-input--error'
+    var id = (input.id || 'uid-' + Date.now()) + '-error'
+    var prev = input.previousElementSibling
+    if (!prev || !prev.classList.contains(classToken)) {
+      prev = input.ownerDocument.createElement('div')
+      prev.className = classToken
+      input.parentElement.insertBefore(prev, input)
+    }
+    if (message) {
+      input.classList.add(classError)
+      input.setAttribute('aria-describedby', id)
+      prev.innerHTML = (
+        '<label class="usa-label usa-label--error" for="' + id + '">Text input error</label>' +
+        '<span class="usa-error-message" id="' + id + '" role="alert">' + message + '</span>'
+      )
+    } else {
+      input.classList.remove(classError)
+      input.removeAttribute('aria-describedby')
+      input.parentElement.removeChild(prev)
+    }
+  }
+
+}
+
+var checkDialog = function () {
+  var reDialog = /usa-js-dialog--active/
+  var isHidden = false
+  var hiddenElements = []
+  var hideElements = function (el) {
+    var p = el && el.parentNode
+    if (!p || el.nodeName === 'BODY') return
+    Array.from(p.children).forEach(function (child) {
+      if (child === el || child.nodeName === 'SCRIPT') return
+      child.setAttribute('aria-hidden', true)
+      hiddenElements.push(child)
+    })
+    hideElements(p)
+  }
+  return function (className) {
+    if (reDialog.test(className) && !isHidden) {
+      isHidden = true
+      select('.usa-dialog.is-visible').forEach(hideElements)
+    } else if (isHidden) {
+      isHidden = false
+      var el
+      while (el = hiddenElements.shift()) {
+        el.removeAttribute('aria-hidden')
+      }
+    }
+  }
+}()
+
+;(function () {
+  // mirror <body class> changes to <html>
+  // so, Firefox will do overflow: hidden;
+  var html = document.documentElement
+  var body = document.body
+  var cloneClass = function () {
+    checkDialog(html.className = body.className)
+  }
+  new MutationObserver(cloneClass)
+  .observe(body, { attributeFilter: ['class'] })
+})();

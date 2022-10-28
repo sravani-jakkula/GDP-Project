@@ -15,7 +15,7 @@
 #### * [Login page](#Login-page)
 #### * [API running status image](#API-running-status-image)
 #### * [mysql dependencies](#mysql-dependencies)
-
+#### * [Category table](#Category-table)
 ### Team Members
 * Trilochan Reddy Sama
 * Thrinadh Chowdary Gutta
@@ -306,3 +306,6 @@ Worked on register API when we tryed to store some data though frontend signup p
 
 ### working on asset table 
 inserting the asset record in asset table is done successfully goinf to work on update the asset in the asset table
+
+### Category table
+Created category table and added attributes. Able to load the data  and retrieve the data from and to the database.

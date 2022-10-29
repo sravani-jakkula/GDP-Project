@@ -15,7 +15,7 @@
 #### * [Login page](#Login-page)
 #### * [API running status image](#API-running-status-image)
 #### * [mysql dependencies](#mysql-dependencies)
-
+#### * [Category table](#Category-table)
 ### Team Members
 * Trilochan Reddy Sama
 * Thrinadh Chowdary Gutta
@@ -306,3 +306,9 @@ Worked on register API when we tryed to store some data though frontend signup p
 
 ### working on asset table 
 inserting the asset record in asset table is done successfully goinf to work on update the asset in the asset table
+
+### Category table
+Created category table and added attributes. Able to load the data  and retrieve the data from and to the database.
+
+### Department table
+Under entities package added Department.java class with attibutes called id, name. Data is getting stored in the table at the database end and able to fetch the data from the database. Bascially, this table will have only two records as computer science contains only two departments i.e; Applied computer science and information systems.

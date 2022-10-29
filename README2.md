@@ -312,3 +312,6 @@ Created category table and added attributes. Able to load the data  and retrieve
 
 ### Department table
 Under entities package added Department.java class with attibutes called id, name. Data is getting stored in the table at the database end and able to fetch the data from the database. Bascially, this table will have only two records as computer science contains only two departments i.e; Applied computer science and information systems.
+
+### Asset table
+Done with updating the asset in the asset table and to read the asset from the asset table is done successfully.

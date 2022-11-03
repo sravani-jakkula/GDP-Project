@@ -171,3 +171,6 @@ Added below dependencies
 
 ### Asset History Table Created
 		By using this Table we can able to see On what dates students can check in assets and on what date students should return and all history
+
+### Updated Asset History Table Created
+		just Adding the new column of dates and it will update the dates in history column

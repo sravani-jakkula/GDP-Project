@@ -315,3 +315,6 @@ Under entities package added Department.java class with attibutes called id, nam
 
 ### Asset table
 Done with updating the asset in the asset table and to read the asset from the asset table is done successfully.
+
+### Working on deleting asset
+working on deletion operation on asset in the asset table and there is a small correction on asset post request in the backend it need to be updated.

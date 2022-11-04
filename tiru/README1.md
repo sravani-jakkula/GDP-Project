@@ -174,3 +174,6 @@ Added below dependencies
 
 ### Updated Asset History Table Created
 		just Adding the new column of dates and it will update the dates in history column
+
+### History Table Updated 
+		Change the table for required columns

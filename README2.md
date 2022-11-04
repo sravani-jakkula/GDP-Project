@@ -318,3 +318,6 @@ Done with updating the asset in the asset table and to read the asset from the a
 
 ### Working on deleting asset
 working on deletion operation on asset in the asset table and there is a small correction on asset post request in the backend it need to be updated.
+
+### Asset table is done 
+All operations are done on the asset table like inserting an asset deleting an asset reading asset and updating the asset going to work with asset history table

@@ -321,3 +321,8 @@ working on deletion operation on asset in the asset table and there is a small c
 
 ### Asset table is done 
 All operations are done on the asset table like inserting an asset deleting an asset reading asset and updating the asset going to work with asset history table
+
+
+### category table is done
+creation and insertion of category table is done
+

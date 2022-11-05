@@ -312,9 +312,19 @@ Created category table and added attributes. Able to load the data  and retrieve
 
 ### Department table
 Under entities package added Department.java class with attibutes called id, name. Data is getting stored in the table at the database end and able to fetch the data from the database. Bascially, this table will have only two records as computer science contains only two departments i.e; Applied computer science and information systems.
+Able to store the data into the department table. Stored data is getting fetched with the help of the api. Modifying one of the fields of the table with the user id or the asset id implementation is in progress. Able to delete the record from the table. 
 
 ### Asset table
 Done with updating the asset in the asset table and to read the asset from the asset table is done successfully.
 
 ### Working on deleting asset
 working on deletion operation on asset in the asset table and there is a small correction on asset post request in the backend it need to be updated.
+
+### Asset table is done 
+All operations are done on the asset table like inserting an asset deleting an asset reading asset and updating the asset going to work with asset history table
+
+
+### category table is done
+creation and insertion of category table is done
+Able to load the data to the databse and can fetch it. Category table should contains catergoreis like laptops, macbooks, nmarkers, erases, hdmi cords. Once user logins he/she should select the catergory of item they want to check out. This table is pretty much showcasing the categories of the assets.
+

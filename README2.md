@@ -16,7 +16,7 @@
 #### * [API running status image](#API-running-status-image)
 #### * [mysql dependencies](#mysql-dependencies)
 #### * [Category table](#Category-table)
-#### * [Adding_log4j_dependency](#adding-log4j-dependency)
+#### * [Adding log4j dependency](#adding-log4j-dependency)
 ### Team Members
 * Trilochan Reddy Sama
 * Thrinadh Chowdary Gutta

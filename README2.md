@@ -341,3 +341,8 @@ successfully storing the asset in thge asset table and updating it and reading a
 I have Created Static Home page components and i am getting isuues and it is not like what i expect
 I need to style that page and add some css 
 I need to create page and components dynamically 
+
+### working on home page components within homepage components weorking on HDMI category
+Working on HDMI category in the home page component.
+while working on HDMI home page component the functionality is not working .
+workig on related errors.

@@ -333,3 +333,9 @@ creation and insertion of Asset History Table  is done
 can able to see the information of Asset History and asset is nothing but one item 
 we can able to see the information of student asset history
 so it shows that who check in the item and who check out the item.
+
+
+### Working On Home page
+I have Created Static Home page components and i am getting isuues and it is not like what i expect
+I need to style that page and add some css 
+I need to create page and components dynamically 

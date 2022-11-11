@@ -333,3 +333,6 @@ creation and insertion of Asset History Table  is done
 can able to see the information of Asset History and asset is nothing but one item 
 we can able to see the information of student asset history
 so it shows that who check in the item and who check out the item.
+
+### Asset table
+successfully storing the asset in thge asset table and updating it and reading asset from the asset table in the database and we tested through postman theseall operations are working perfect.

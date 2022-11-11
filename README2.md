@@ -336,3 +336,8 @@ so it shows that who check in the item and who check out the item.
 
 ### Asset table
 successfully storing the asset in thge asset table and updating it and reading asset from the asset table in the database and we tested through postman theseall operations are working perfect.
+
+### Working On Home page
+I have Created Static Home page components and i am getting isuues and it is not like what i expect
+I need to style that page and add some css 
+I need to create page and components dynamically 

@@ -363,3 +363,5 @@ Able to modify the user for a particular asset. Can de-tag the asset from one us
 Able to get the asset history from a specified date for a particular asset.
 
 
+### category table
+successfully able to create the category table and able to store data in category table.

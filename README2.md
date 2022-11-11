@@ -328,3 +328,8 @@ All operations are done on the asset table like inserting an asset deleting an a
 creation and insertion of category table is done
 Able to load the data to the databse and can fetch it. Category table should contains catergoreis like laptops, macbooks, nmarkers, erases, hdmi cords. Once user logins he/she should select the catergory of item they want to check out. This table is pretty much showcasing the categories of the assets.
 
+### Asset History Table is done
+creation and insertion of Asset History Table  is done
+can able to see the information of Asset History and asset is nothing but one item 
+we can able to see the information of student asset history
+so it shows that who check in the item and who check out the item.

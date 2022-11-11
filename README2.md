@@ -342,7 +342,16 @@ I have Created Static Home page components and i am getting isuues and it is not
 I need to style that page and add some css 
 I need to create page and components dynamically 
 
-### working on home page components within homepage components weorking on HDMI category
+### working on home page components within homepage components working on HDMI category
 Working on HDMI category in the home page component.
 while working on HDMI home page component the functionality is not working .
 workig on related errors.
+
+### adding log4j dependency
+> <dependencies>
+        <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.8.2</version>
+        </dependency>
+</dependencies>

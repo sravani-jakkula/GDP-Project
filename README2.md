@@ -356,3 +356,10 @@ workig on related errors.
                 <version>2.8.2</version>
         </dependency>
 </dependencies>
+
+### Accomplishments
+Crud operations of all the main entities is completed.
+Able to modify the user for a particular asset. Can de-tag the asset from one user and able to assign it to the new user.
+Able to get the asset history from a specified date for a particular asset.
+
+

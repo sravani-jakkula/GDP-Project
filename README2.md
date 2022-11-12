@@ -16,6 +16,7 @@
 #### * [API running status image](#API-running-status-image)
 #### * [mysql dependencies](#mysql-dependencies)
 #### * [Category table](#Category-table)
+#### * [Adding log4j dependency](#adding-log4j-dependency)
 ### Team Members
 * Trilochan Reddy Sama
 * Thrinadh Chowdary Gutta
@@ -334,8 +335,36 @@ can able to see the information of Asset History and asset is nothing but one it
 we can able to see the information of student asset history
 so it shows that who check in the item and who check out the item.
 
+### Asset table
+successfully storing the asset in thge asset table and updating it and reading asset from the asset table in the database and we tested through postman theseall operations are working perfect.
 
 ### Working On Home page
 I have Created Static Home page components and i am getting isuues and it is not like what i expect
 I need to style that page and add some css 
 I need to create page and components dynamically 
+
+### working on home page components within homepage components working on HDMI category
+Working on HDMI category in the home page component.
+while working on HDMI home page component the functionality is not working .
+workig on related errors.
+
+### adding log4j dependency
+> <dependencies>
+        <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.8.2</version>
+        </dependency>
+</dependencies>
+
+### Accomplishments
+Crud operations of all the main entities is completed.
+Able to modify the user for a particular asset. Can de-tag the asset from one user and able to assign it to the new user.
+Able to get the asset history from a specified date for a particular asset.
+
+
+### category table
+successfully able to create the category table and able to store data in category table.
+
+### Asset table error
+if we update the asset in the asset table the date of that asset is not correct if we give today’s date it will change to yesterday’s date that is fixed

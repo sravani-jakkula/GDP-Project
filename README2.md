@@ -365,3 +365,6 @@ Able to get the asset history from a specified date for a particular asset.
 
 ### category table
 successfully able to create the category table and able to store data in category table.
+
+### Asset table error
+if we update the asset in the asset table the date of that asset is not correct if we give today’s date it will change to yesterday’s date that is fixed

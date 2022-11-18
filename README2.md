@@ -368,3 +368,10 @@ successfully able to create the category table and able to store data in categor
 
 ### Asset table error
 if we update the asset in the asset table the date of that asset is not correct if we give today’s date it will change to yesterday’s date that is fixed
+
+### dependency odpi
+<dependency>
+    <groupId>org.odpi.egeria</groupId>
+    <artifactId>audit-log-framework</artifactId>
+    <version>3.13</version>
+</dependency>

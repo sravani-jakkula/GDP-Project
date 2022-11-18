@@ -10,21 +10,29 @@ function App() {
   // React States
   return(
      <>
-     {/* <nav>
-      <ul>
-        <li>
-          <Link to="/">Start</Link>
-        </li>
-      </ul>
-     </nav>
-      <Routes>
-        <Route path="*l" element={<Login/>}/>
-        <Route path="/Register" element={<Register />}/>        
-      </Routes> */}
-      <Home />
-
-     </>
-  );
+    
+      <Router>
+        <Routes>
+          <Route path="/" element={<Profile/>}></Route>
+          {/* <Route path='/login' element={<Login />}></Route> */}
+          <Route path='/adminlogin' element={<AdminLogin />}></Route>
+          <Route path='/faculty-signup' element={<Register />}></Route>
+          <Route path='/user-signup' element={<Signup />}></Route>
+          <Route path='/faculty-dashboard' element={<FacultyDash />}></Route>
+          <Route path='/student-dashboard' element={<StudentDash />}></Route>
+          <Route path='/assets/add' element={<AddAsset />}></Route>
+          <Route path='/assets/requests' element={<AproveAssets />}></Route>
+          <Route path='/profile' element={<Profile />}></Route>
+          <Route
+            path="*"
+            element={<Navigate to="/" replace />}
+          />
+        </Routes>
+      </Router>
+    </>
+  )
 }
+
+
 
 export default App;

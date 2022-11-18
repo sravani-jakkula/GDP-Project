@@ -377,4 +377,4 @@ if we update the asset in the asset table the date of that asset is not correct 
 </dependency>
 
 ### Asset table 
-I facing issues with the asset assigned date if we assign an asset to a particular person on this day it was not taking today’s date it is taking tomorrow’s date
+I facing issues with the asset assigned date if we assign an asset to a particular person on this day it was not taking today’s date it is taking tomorrows date

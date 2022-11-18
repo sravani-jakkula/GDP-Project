@@ -377,4 +377,7 @@ if we update the asset in the asset table the date of that asset is not correct 
 </dependency>
 
 ### Asset table 
-I facing issues with the asset assigned date if we assign an asset to a particular person on this day it was not taking today’s date it is taking tomorrows date
+I am facing issues with the asset assigned date if we assign an asset to a particular person on this day it was not taking today’s date it is taking tomorrows date
+
+### My Profile
+In my profile field, user should be able to edit his/her information if needs to make any chnages. Have to add edit button and my asset component need to be added where user can track his asset request and list of assets assigned to him.

@@ -375,3 +375,16 @@ if we update the asset in the asset table the date of that asset is not correct 
     <artifactId>audit-log-framework</artifactId>
     <version>3.13</version>
 </dependency>
+
+### Asset table 
+I am facing issues with the asset assigned date if we assign an asset to a particular person on this day it was not taking today’s date it is taking tomorrows date
+
+### My Profile
+In my profile field, user should be able to edit his/her information if needs to make any chnages. Have to add edit button and my asset component need to be added where user can track his asset request and list of assets assigned to him.
+
+### working on Asset table 
+I resolved that issue the date is successfully working there is no more issues with the asset table and the user dashboard is done need to add few more fields in it.
+
+
+### Working on dashboad screen for studentlogin
+Working on creating frontend webpage for studentlogin i.e; creating a userfriendly dashboad when student login is successful.

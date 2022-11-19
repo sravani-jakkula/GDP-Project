@@ -388,3 +388,7 @@ I resolved that issue the date is successfully working there is no more issues w
 
 ### Working on dashboad screen for studentlogin
 Working on creating frontend webpage for studentlogin i.e; creating a userfriendly dashboad when student login is successful.
+
+### Created Student Dashboard
+Working on Student Dashboard , we just added few fields and columns and we need to add some columns for dashboard
+just created static page and we need to make it as dynamic page

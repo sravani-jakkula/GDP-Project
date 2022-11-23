@@ -1,79 +1,78 @@
-import React, {useState} from 'react';
-import time from '../src/images/time.jpg'
-import './Login.css'
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
-export default function Register() {
-    const [name, setName] = useState("");    
-    const [ema, setEma] = useState("");
-    const [pass,setPass] = useState("");
-    const [repass,setRepass] = useState("");
+const Register = () => {
+    const [fName, setfName] = useState()
+    const [lName, setlName] = useState()
+    const [Phone, setPhone] = useState()
+    const [email, setEmail] = useState()
+    const [Password, setPassword] = useState()
+    const [cPassword, setcPassword] = useState()
 
-    const handleInputChange = (e) => {
-        const {id , value} = e.target;
-        if(id === "name"){
-            setName(value);
-        }
-        
-        if(id === "ema"){
-            setEma(value);
-        }
-        if(id === "pass"){
-            setPass(value);
-        }
-        if(id === "repass"){
-            setRepass(value);
-        }
-        
+    return (
+        <div>
+            <div className="d-flex align-items-center auth px-0 h-100" style={{ position: 'absolute', left: 0, top: 0, height: '100vh', width: '100vw', backgroundImage: 'url("/Images/auth/user-signup.webp")', backgroundRepeat: "no-repeat", backgroundSize: 'cover' }}>
+                <div className="row w-100 mx-0">
+                    <div className="col-lg-8 mx-auto">
+                        <div className="card text-left py-5 px-4 px-sm-5 shadow" style={{ background:'radial-gradient(black, transparent)' }} >
+                            <div className="brand-logo">
+                                <img  alt="logo" />
+                            </div>
+                            <h4 className='text-white'>New here?</h4>
+                            <h6 className="font-weight-light text-white">Signing up is easy. It only takes a few steps</h6>
+                            <form className="pt-3">
+                                <div className='row'>
+                                    <div className='col-lg-6'>
+                                        <div className="form-group">
+                                            <input type="text" value={fName} className="form-control form-control-lg" id="exampleInputUsername1" placeholder="First Name"
+                                                onChange={(e) => setfName(e.target.value)}
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="text" value={lName} className="form-control form-control-lg" id="exampleInputUsername1" placeholder="Last Name"
+                                                onChange={(e) => setlName(e.target.value)}
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="email" className="form-control form-control-lg" id="exampleInputEmail1" placeholder="User ID"
+                                                onChange={(e) => setPhone(e.target.value)}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className='col-lg-6'>
 
-    }
-    const handleSubmit  = () => {
-      
-      window.location.href = "Login.js"
-      console.log(name,ema,pass,repass);
-  }
-  
-  return (
-    <>
+                                        <div className="form-group">
+                                            <input type="password" className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password"
+                                                onChange={(e) => setPassword(e.target.value)} />
+                                        </div>
+                                        <div className="form-group">
+                                            <input type="password" value={cPassword} className="form-control form-control-lg" id="exampleInputPassword1" placeholder="Confirm Password"
+                                                onChange={(e) => setcPassword(e.target.value)} />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" className='font-weight-light text-white'>Select Department</label>
+                                            <select class="form-control form-control-lg" name="" id="" style={{ outline: 'none', border: '1px solid #ced4da' }}>
+                                                <option>ACS</option>
+                                                <option>IS</option>
+                                            </select>
+                                        </div>
+                                        <div className="mt-3">
+                                            <Link className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" to="/dashboard">SIGN UP</Link>
+                                        </div>
+                                        <div className="text-center mt-4 font-weight-light text-white">
+                                            Already have an account? <Link to="/login" className="text-white">Login</Link>
+                                        </div>
+                                    </div>
 
-<div class="split left">
-  <div class="centered">
-    <img src={time} className="lo"/>    
-  </div>
-</div>
+                                </div>
 
-<div class="split right">
-  <div class="centered">
-    <h1 className='head'>Register Page</h1>
-    <div>
-      <label for="ema"></label>
-      <input type="email" size="50" value={ema} onChange = {(e) => handleInputChange(e)} placeholder='Enter Your Email' required id="ema" className='email'/>
-      <span id="e"></span>
-    </div>
-    <div>
-      <label for="name"></label>
-      <input type="text" size="50" value={name} onChange = {(e) => handleInputChange(e)} placeholder='Enter Your Full Name' required id="name" className='ji'/>
-      <span id="f"></span>
-    </div>
-    <div>
-      <label for="pass"></label>
-      <input type="password" size="50" value={pass} onChange = {(e) => handleInputChange(e)} placeholder='Enter Your Password' required id="pass" className='password'/>
-      <span id="p"></span>
-    </div>
-    <div>
-      <label for="reenter"></label>
-      <input type="password" size="50" value={repass} onChange = {(e) => handleInputChange(e)} placeholder='Re-enter Your password' required id="repass" className='password'/>
-      <span id=""></span>
-    </div>
-    
-
-
-  </div>
-  
-  <button type="submit"  onClick={()=>handleSubmit()} className='reg'>Register</button>
-
-  </div>
-</>
-
-  )
-
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
+
+export default Register

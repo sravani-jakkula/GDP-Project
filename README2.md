@@ -412,3 +412,6 @@ Error in asset assigned date and in asset history date is successfully solved an
 Student should be restricted to checkout only two electronics and must checkout only one from each category.
 Faculty can check out any number of assets they need along with dusters,markes,hdmi etc..
 
+### working on user and admin home pages
+Working on Styling the admin home pages and user or faculty home page to look good and make those pages functional 
+

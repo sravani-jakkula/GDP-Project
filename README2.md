@@ -404,3 +404,7 @@ just created static page and we need to make it as dynamic page
 Able to add asset component of admin dashboard screen.
 Able to pass json object from front end to the back end.
 Admin functionality changes completed.
+
+### User functionality
+Student should be restricted to checkout only two electronics and must checkout only one from each category.
+Faculty can check out any number of assets they need along with dusters,markes,hdmi etc..

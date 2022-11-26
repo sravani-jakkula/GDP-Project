@@ -399,3 +399,8 @@ just created static page and we need to make it as dynamic page
     <artifactId>hazelcast</artifactId>
     <version>5.1.4</version>
 </dependency>
+
+### Admin responsibilities
+Able to add asset component of admin dashboard screen.
+Able to pass json object from front end to the back end.
+Admin functionality changes completed.

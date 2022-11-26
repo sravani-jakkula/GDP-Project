@@ -404,3 +404,7 @@ just created static page and we need to make it as dynamic page
 Able to add asset component of admin dashboard screen.
 Able to pass json object from front end to the back end.
 Admin functionality changes completed.
+
+
+### working on Asset table 
+Error in asset assigned date and in asset history date is successfully solved and there are few changes let in backend. 

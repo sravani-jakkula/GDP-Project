@@ -415,3 +415,6 @@ Faculty can check out any number of assets they need along with dusters,markes,h
 ### working on user and admin home pages
 Working on Styling the admin home pages and user or faculty home page to look good and make those pages functional 
 
+### Working on AWS
+successfully creates database in the AWS RDS and needs to deploy the project in the cloud
+
